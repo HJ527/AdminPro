@@ -8,6 +8,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { PagesComponent } from './pages/pages.component';
 import { Grafica1Component } from './grafica1/grafica1.component';
 import { ProgressComponent } from './progress/progress.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ComponentsModule } from '../components/components.module';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { ProgressComponent } from './progress/progress.component';
   ],
   imports: [
     CommonModule,
+    ReactiveFormsModule,
     PagesRoutingModule,
+    ComponentsModule,
     SharedModule
     ],
   exports:[
